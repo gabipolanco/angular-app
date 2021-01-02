@@ -1,0 +1,10 @@
+<div>
+    <label for="nombre">Nombre:
+        <input name="nombre" type="text" [(ngModel)]="nombre" >
+    </label>
+    <button [disabled]="nombre.length === 0" (click)="borrarCampos()">Borrar campos</button>
+</div>
+
+<div>
+    <p>Este es el nombre que ingresaste: {{nombre}}</p>
+</div>

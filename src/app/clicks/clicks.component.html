@@ -1,0 +1,9 @@
+<div>
+    <button (click)="contar()">Apretame</button>
+
+    <ul>
+        <li [ngStyle]="{
+            'background-color': click >3 ? 'red' : 'white' 
+        }" *ngFor="let click of clicks">{{click}}</li>
+    </ul>
+</div>
