@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div *ngFor="let user of users">
+      <p>Name: {{ user.name }}</p>
+      <p>Dni: {{ user.dni }}</p>
+      <button (click)=edit(user.id)>Edit</button>
+  </div>
+</div>
